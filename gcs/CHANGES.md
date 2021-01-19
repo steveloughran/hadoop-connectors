@@ -2,6 +2,8 @@
 
 1.  Fix proxy configuration for Apache HTTP transport.
 
+1.  Update all dependencies to latest versions.
+
 ### 2.2.0 - 2021-01-06
 
 1.  Delete deprecated methods.
