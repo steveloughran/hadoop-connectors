@@ -106,7 +106,7 @@
     <!-- Test dependencies -->
     <google.truth.version>1.1</google.truth.version>
     <junit.version>4.13.1</junit.version>
-    <mockito.version>3.7.7</mockito.version>
+    <mockito.version>3.6.28</mockito.version>
     <system-lambda.version>1.1.1</system-lambda.version>
   </properties>
 
