@@ -262,6 +262,19 @@
         </repository>
       </repositories>
     </profile>
+
+    <!-- build against a local or nightly hadoop build.  -->
+    <profile>
+      <id>hadoop-trunk</id>
+      <activation>
+        <property>
+          <name>hadoop-trunk</name>
+        </property>
+      </activation>
+      <properties>
+        <hadoop.version>3.4.0-SNAPSHOT</hadoop.version>
+      </properties>
+    </profile>
   </profiles>
 
   <dependencyManagement>
@@ -434,6 +447,15 @@
         <version>${hadoop.version}</version>
         <scope>test</scope>
       </dependency>
+
+      <dependency>
+        <groupId>org.apache.hadoop</groupId>
+        <artifactId>hadoop-mapreduce-client-core</artifactId>
+        <version>${hadoop.version}</version>
+        <scope>test</scope>
+        <type>test-jar</type>
+      </dependency>
+
       <dependency>
         <groupId>io.grpc</groupId>
         <artifactId>grpc-testing</artifactId>
